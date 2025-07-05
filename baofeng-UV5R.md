@@ -206,3 +206,141 @@ Appuie sur `EXIT` pour quitter.
 - Le menu RESET (40) efface tout : à éviter sauf urgence !
 
 ---
+
+## Tableau des sous-canaux CTCSS et DCS pour Baofeng UV-5R
+
+### CTCSS (Continuous Tone Coded Squelch System) — Codes analogiques
+
+| N° | Code (Hz) | N° | Code (Hz) | N° | Code (Hz) | N° | Code (Hz) | N° | Code (Hz) |
+|----|-----------|----|-----------|----|-----------|----|-----------|----|-----------|
+| 1  | 67.0      | 11 | 94.8      | 21 | 131.8     | 31 | 171.3     | 41 | 203.5     |
+| 2  | 69.3      | 12 | 97.4      | 22 | 136.5     | 32 | 173.8     | 42 | 206.5     |
+| 3  | 71.9      | 13 | 100.0     | 23 | 141.3     | 33 | 177.3     | 43 | 210.7     |
+| 4  | 74.4      | 14 | 103.5     | 24 | 146.2     | 34 | 179.9     | 44 | 218.1     |
+| 5  | 77.0      | 15 | 107.2     | 25 | 151.4     | 35 | 183.5     | 45 | 225.7     |
+| 6  | 79.7      | 16 | 110.9     | 26 | 156.7     | 36 | 186.2     | 46 | 229.1     |
+| 7  | 82.5      | 17 | 114.8     | 27 | 159.8     | 37 | 189.9     | 47 | 233.6     |
+| 8  | 85.4      | 18 | 118.8     | 28 | 162.2     | 38 | 192.8     | 48 | 241.8     |
+| 9  | 88.5      | 19 | 123.0     | 29 | 165.5     | 39 | 196.6     | 49 | 250.3     |
+| 10 | 91.5      | 20 | 127.3     | 30 | 167.9     | 40 | 199.5     | 50 | 254.1     |
+
+---
+
+### DCS (Digital Coded Squelch) — Codes numériques
+
+| N°  | Code   | N°  | Code   | N°  | Code   | N°  | Code   | N°  | Code   |
+|-----|--------|-----|--------|-----|--------|-----|--------|-----|--------|
+| 1   | D023N  | 22  | D131N  | 43  | D251N  | 64  | D371N  | 85  | D532N  |
+| 2   | D025N  | 23  | D132N  | 44  | D252N  | 65  | D411N  | 86  | D546N  |
+| 3   | D026N  | 24  | D134N  | 45  | D255N  | 66  | D412N  | 87  | D565N  |
+| 4   | D031N  | 25  | D143N  | 46  | D261N  | 67  | D413N  | 88  | D606N  |
+| 5   | D032N  | 26  | D145N  | 47  | D263N  | 68  | D423N  | 89  | D612N  |
+| 6   | D036N  | 27  | D152N  | 48  | D265N  | 69  | D431N  | 90  | D624N  |
+| 7   | D043N  | 28  | D155N  | 49  | D266N  | 70  | D432N  | 91  | D627N  |
+| 8   | D047N  | 29  | D156N  | 50  | D271N  | 71  | D445N  | 92  | D631N  |
+| 9   | D051N  | 30  | D162N  | 51  | D274N  | 72  | D446N  | 93  | D632N  |
+| 10  | D053N  | 31  | D165N  | 52  | D306N  | 73  | D452N  | 94  | D645N  |
+| 11  | D054N  | 32  | D172N  | 53  | D311N  | 74  | D454N  | 95  | D654N  |
+| 12  | D065N  | 33  | D174N  | 54  | D315N  | 75  | D455N  | 96  | D662N  |
+| 13  | D071N  | 34  | D205N  | 55  | D325N  | 76  | D462N  | 97  | D664N  |
+| 14  | D072N  | 35  | D212N  | 56  | D331N  | 77  | D464N  | 98  | D703N  |
+| 15  | D073N  | 36  | D223N  | 57  | D332N  | 78  | D465N  | 99  | D712N  |
+| 16  | D074N  | 37  | D225N  | 58  | D343N  | 79  | D466N  | 100 | D723N  |
+| 17  | D114N  | 38  | D226N  | 59  | D346N  | 80  | D503N  | 101 | D731N  |
+| 18  | D115N  | 39  | D243N  | 60  | D351N  | 81  | D506N  | 102 | D732N  |
+| 19  | D116N  | 40  | D244N  | 61  | D356N  | 82  | D516N  | 103 | D734N  |
+| 20  | D122N  | 41  | D245N  | 62  | D364N  | 83  | D523N  | 104 | D743N  |
+| 21  | D125N  | 42  | D246N  | 63  | D365N  | 84  | D526N  | 105 | D754N  |
+
+---
+
+- **CTCSS** : Utilise un signal audio continu (50 codes courants).
+- **DCS** : Utilise un code numérique, plus de possibilités (105 codes sur Baofeng).
+
+---
+
+## Plan de communication Baofeng UV-5R — MHz, 6.25kHz, CTCSS, DCS
+
+| Canal | Fréquence (MHz) | Sécurité     | Code           | Remarque                   |
+|-------|-----------------|--------------|----------------|----------------------------|
+| 1     | 446.00625       | Aucune       | —              | Libre MHz                  |
+| 2     | 446.01875       | Aucune       | —              | Libre MHz                  |
+| 3     | 446.03125       | Aucune       | —              | Libre MHz                  |
+| 4     | 446.04375       | Aucune       | —              | Libre MHz                  |
+| 5     | 446.05625       | Aucune       | —              | Libre MHz                  |
+| 6     | 446.06875       | Aucune       | —              | Libre MHz                  |
+| 7     | 446.08125       | Aucune       | —              | Libre MHz                  |
+| 8     | 446.09375       | Aucune       | —              | Libre MHz                  |
+| 9     | 446.10625       | Aucune       | —              | Libre MHz                  |
+| 10    | 446.11875       | Aucune       | —              | Libre MHz                  |
+| 11    | 446.13125       | Aucune       | —              | Libre MHz                  |
+| 12    | 446.14375       | Aucune       | —              | Libre MHz                  |
+| 13    | 446.15625       | Aucune       | —              | Libre MHz                  |
+| 14    | 446.16875       | Aucune       | —              | Libre MHz                  |
+| 15    | 446.18125       | Aucune       | —              | Libre MHz                  |
+| 16    | 446.19375       | Aucune       | —              | Libre MHz                  |
+| 17    | 446.005         | Aucune       | —              | Libre (fréq. proche)       |
+| 18    | 446.020         | Aucune       | —              | Libre (fréq. proche)       |
+| 19    | 446.030         | Aucune       | —              | Libre (fréq. proche)       |
+| 20    | 446.045         | Aucune       | —              | Libre (fréq. proche)       |
+| 21    | 446.055         | Aucune       | —              | Libre (fréq. proche)       |
+| 22    | 446.070         | Aucune       | —              | Libre (fréq. proche)       |
+| 23    | 446.080         | Aucune       | —              | Libre (fréq. proche)       |
+| 24    | 446.095         | Aucune       | —              | Libre (fréq. proche)       |
+| 25    | 446.105         | Aucune       | —              | Libre (fréq. proche)       |
+| 26    | 446.120         | Aucune       | —              | Libre (fréq. proche)       |
+| 27    | 446.130         | Aucune       | —              | Libre (fréq. proche)       |
+| 28    | 446.145         | Aucune       | —              | Libre (fréq. proche)       |
+| 29    | 446.155         | Aucune       | —              | Libre (fréq. proche)       |
+| 30    | 446.170         | Aucune       | —              | Libre (fréq. proche)       |
+| 31    | 446.180         | Aucune       | —              | Libre (fréq. proche)       |
+| 32    | 446.195         | Aucune       | —              | Libre (fréq. proche)       |
+| 33    | 446.00625       | CTCSS        | 88.5 Hz        | Sécurisé MHz               |
+| 34    | 446.01875       | CTCSS        | 94.8 Hz        | Sécurisé MHz               |
+| 35    | 446.03125       | CTCSS        | 103.5 Hz       | Sécurisé MHz               |
+| 36    | 446.04375       | CTCSS        | 110.9 Hz       | Sécurisé MHz               |
+| 37    | 446.05625       | CTCSS        | 123.0 Hz       | Sécurisé MHz               |
+| 38    | 446.06875       | CTCSS        | 127.3 Hz       | Sécurisé MHz               |
+| 39    | 446.08125       | CTCSS        | 136.5 Hz       | Sécurisé MHz               |
+| 40    | 446.09375       | CTCSS        | 141.3 Hz       | Sécurisé MHz               |
+| 41    | 446.10625       | CTCSS        | 151.4 Hz       | Sécurisé MHz               |
+| 42    | 446.11875       | CTCSS        | 162.2 Hz       | Sécurisé MHz               |
+| 43    | 446.13125       | CTCSS        | 173.8 Hz       | Sécurisé MHz               |
+| 44    | 446.14375       | CTCSS        | 192.8 Hz       | Sécurisé MHz               |
+| 45    | 446.15625       | CTCSS        | 203.5 Hz       | Sécurisé MHz               |
+| 46    | 446.16875       | CTCSS        | 210.7 Hz       | Sécurisé MHz               |
+| 47    | 446.18125       | CTCSS        | 225.7 Hz       | Sécurisé MHz               |
+| 48    | 446.19375       | CTCSS        | 250.3 Hz       | Sécurisé MHz               |
+| 49    | 446.00625       | DCS          | D023N          | Sécurisé MHz               |
+| 50    | 446.01875       | DCS          | D025N          | Sécurisé MHz               |
+| 51    | 446.03125       | DCS          | D026N          | Sécurisé MHz               |
+| 52    | 446.04375       | DCS          | D031N          | Sécurisé MHz               |
+| 53    | 446.05625       | DCS          | D032N          | Sécurisé MHz               |
+| 54    | 446.06875       | DCS          | D047N          | Sécurisé MHz               |
+| 55    | 446.08125       | DCS          | D051N          | Sécurisé MHz               |
+| 56    | 446.09375       | DCS          | D054N          | Sécurisé MHz               |
+| 57    | 446.10625       | DCS          | D065N          | Sécurisé MHz               |
+| 58    | 446.11875       | DCS          | D073N          | Sécurisé MHz               |
+| 59    | 446.13125       | DCS          | D074N          | Sécurisé MHz               |
+| 60    | 446.14375       | DCS          | D114N          | Sécurisé MHz               |
+| 61    | 446.15625       | DCS          | D131N          | Sécurisé MHz               |
+| 62    | 446.16875       | DCS          | D132N          | Sécurisé MHz               |
+| 63    | 446.18125       | DCS          | D143N          | Sécurisé MHz               |
+| 64    | 446.19375       | DCS          | D165N          | Sécurisé MHz               |
+| 65    | 446.005         | CTCSS        | 88.5 Hz        | Sécurisé (fréq. proche)    |
+| 66    | 446.020         | CTCSS        | 94.8 Hz        | Sécurisé (fréq. proche)    |
+| 67    | 446.030         | CTCSS        | 103.5 Hz       | Sécurisé (fréq. proche)    |
+| 68    | 446.045         | CTCSS        | 110.9 Hz       | Sécurisé (fréq. proche)    |
+| 69    | 446.055         | DCS          | D023N          | Sécurisé (fréq. proche)    |
+| 70    | 446.070         | DCS          | D025N          | Sécurisé (fréq. proche)    |
+| 71    | 446.080         | CTCSS        | 136.5 Hz       | Sécurisé (fréq. proche)    |
+| 72    | 446.095         | CTCSS        | 141.3 Hz       | Sécurisé (fréq. proche)    |
+| 73    | 446.105         | DCS          | D051N          | Sécurisé (fréq. proche)    |
+| 74    | 446.120         | DCS          | D054N          | Sécurisé (fréq. proche)    |
+| 75    | 446.130         | CTCSS        | 151.4 Hz       | Sécurisé (fréq. proche)    |
+| 76    | 446.145         | CTCSS        | 192.8 Hz       | Sécurisé (fréq. proche)    |
+| 77    | 446.155         | DCS          | D131N          | Sécurisé (fréq. proche)    |
+| 78    | 446.170         | DCS          | D132N          | Sécurisé (fréq. proche)    |
+| 79    | 446.180         | CTCSS        | 225.7 Hz       | Sécurisé (fréq. proche)    |
+| 80    | 446.195         | CTCSS        | 250.3 Hz       | Sécurisé (fréq. proche)    |
+
